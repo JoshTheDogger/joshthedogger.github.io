@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+    body{
+        background-color: aliceblue;
+    }
+    .main{
+        text-align: center;
+        margin-top: 5%;
+    }
+    p{
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 72px;
+        font-weight: bolder;
+        color: #910d2a;
+    }
+    .btn{
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: x-large;
+        font-weight: bold;
+        color:aliceblue;
+        padding: 1%;
+        border-radius: 6%;
+        background-color: #910d2a;
+    }
+
+
+</style>
+
+<div class="main">
+
+    <p>Is Josh ducking a dog?</p>
+
+    <p id = "yesno"></p>
+
+    <form>
+        <input type="button" name="butt" class="btn" value="Let's find out!" onclick="isDucking()" />
+    </form>
+</div>
+
+<script>
+    var ducking = true;
+
+    function isDucking(){
+        document.getElementById("yesno").innerHTML = ducking? "Yes he is!" : "No he's not!";
+    }
+
+
+</script>
+
+</body>
+</html>
